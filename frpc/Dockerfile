@@ -9,4 +9,4 @@ RUN wget https://github.com/fatedier/frp/releases/download/v${VERSION}/frp_${VER
 VOLUME /frpc_conf
 EXPOSE 22 80
 WORKDIR /
-ENTRYPOINT ["/fprc","-c","/frpc_conf/frpc.ini"]
+ENTRYPOINT ["/frpc","-c","/frpc_conf/frpc.ini"]
