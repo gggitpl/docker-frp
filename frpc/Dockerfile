@@ -1,5 +1,5 @@
 FROM alpine
-ENV VERSION=0.21.0 GOOS=linux GOARCH=arm64
+ENV VERSION=0.21.0 GOOS=linux GOARCH=amd64
 RUN wget https://github.com/fatedier/frp/releases/download/v${VERSION}/frp_${VERSION}_${GOOS}_${GOARCH}.tar.gz \
 && tar -zxf frp_${VERSION}_${GOOS}_${GOARCH}.tar.gz \
 && mkdir /frpc_conf \
