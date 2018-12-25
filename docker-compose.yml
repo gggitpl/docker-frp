@@ -1,14 +1,14 @@
-version: '3'
+version: '2'
 
 services:
-  frps:
-    container_name: frps
-    build: .
-    ports:
-      - 80:80
-      - 443:443
-      - 6000:6000
-      - 7000:7000
-      - 7500:7500
+  frpc:
+    build: ./
+    image: frpc
+    container_name: frpc
+    restart: always
     volumes:
-      - ./frps.ini:/frps_conf/frps.ini
+      - ./frpc.ini:/frp/frpc.ini
+    networks:
+      - frp
+networks:
+  frp:
