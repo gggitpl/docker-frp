@@ -53,3 +53,12 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+.idea/codeStyles/
+.idea/deployment.xml
+.idea/docker-frpc.iml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/webServers.xml
+frpc.ini
