@@ -3,12 +3,8 @@ version: '2'
 services:
   frpc:
     build: ./
-    image: frpc
+    image: frpc:frp_0.22.0_linux_arm
     container_name: frpc
     restart: always
     volumes:
-      - ./frpc.ini:/frp/frpc.ini
-    networks:
-      - frp
-networks:
-  frp:
+      - ./frpc.ini:/frpc/frpc.ini
